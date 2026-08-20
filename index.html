@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Noughts and Crosses</title>
+  </head>
+  <body>
+    <header>
+      <h1>Play Tic, Tac, Toe</h1>
+      <p>Built with HTML, CSS, JavaScript - and of course - lots of love!</p>
+    </header>
+    <main>
+      <aside>
+        <h2>Choose your name</h2>
+        <form>
+          <div>
+            <label for="playername">Player Name</label>
+            <input type="text" name="playername" id="playername" />
+          </div>
+          <div>
+            <button type="button">Cancel</button>
+            <button type="submit">Confirm</button>
+          </div>
+        </form>
+      </aside>
+      <section id="game-configuration"></section>
+      <ol>
+        <li>
+          <article>
+            <h2>Player 1</h2>
+            <h3>PLAYER NAME</h3>
+            <p>X</p>
+            <button>Edit</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2>Player 2</h2>
+            <h3>PLAYER NAME</h3>
+            <p>O</p>
+            <button>Edit</button>
+          </article>
+        </li>
+      </ol>
+      <button>Start New Game</button>
+      <section id="active-game">
+        <article>
+          <h3>You won, <span id="winner-name">PLAYER NAME</span>!</h3>
+          <p>Click "Start New Game" above, to start a new game!</p>
+        </article>
+        <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
