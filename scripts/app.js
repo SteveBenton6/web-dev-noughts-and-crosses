@@ -3,6 +3,7 @@
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 const formElement = document.querySelector("form");
+const errorsOutputElement = document.getElementById("config-errors");
 
 const cancelConfigButtonElement = document.getElementById("cancel-config-btn");
 
