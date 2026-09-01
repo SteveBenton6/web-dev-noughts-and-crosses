@@ -5,6 +5,7 @@ function startNewGame() {
     alert("Please set custom player names for both players!");
     return;
   }
+  activePlayerNameElement.innerText = players[activePlayer].name;
   gameAreaElement.style.display = "block";
 }
 
@@ -14,6 +15,7 @@ function switchPlayer() {
   } else {
     activePlayer = 0;
   }
+  activePlayerNameElement.innerText = players[activePlayer].name;
 }
 
 function selectGameField(event) {

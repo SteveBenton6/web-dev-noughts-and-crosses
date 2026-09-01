@@ -21,6 +21,7 @@ const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById("config-errors");
 const gameAreaElement = document.getElementById("active-game");
 const gameFieldElements = document.querySelectorAll("#game-board li");
+const activePlayerNameElement = document.getElementById("active-player-name");
 
 // Button Elements
 const cancelConfigButtonElement = document.getElementById("cancel-config-btn");
