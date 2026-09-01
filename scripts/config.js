@@ -1,8 +1,9 @@
 // JS Comments Format
 
 function openPlayerConfig(event) {
-  const selectedPlayerId = event.target.dataset.playerid;
-  editedPlayer = selectedPlayerId;
+  //const selectedPlayerId = event.target.dataset.playerid;
+  //editedPlayer = selectedPlayerId;
+  editedPlayer = +event.target.dataset.playerid; // + '1' => 1
   playerConfigOverlayElement.style.display = "block";
   backdropElement.style.display = "block";
 }
