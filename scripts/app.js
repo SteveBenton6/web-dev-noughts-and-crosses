@@ -1,6 +1,7 @@
 // JS Comments Format
 
 let editedPlayer = 0;
+let activePlayer = 0;
 
 const players = [
   {
@@ -13,12 +14,15 @@ const players = [
   },
 ];
 
+// Non Button Elements
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById("config-errors");
 const gameAreaElement = document.getElementById("active-game");
+const gameFieldElements = document.querySelectorAll("#game-board li");
 
+// Button Elements
 const cancelConfigButtonElement = document.getElementById("cancel-config-btn");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
@@ -35,3 +39,7 @@ backdropElement.addEventListener("click", closePlayerConfig);
 formElement.addEventListener("submit", savePlayerConfig);
 
 startNewGameButtonElement.addEventListener("click", startNewGame);
+
+for (const gameFieldElement of gameFieldElements) {
+  gameFieldElement.addEventListener("click", selectGameField);
+}
